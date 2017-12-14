@@ -7,13 +7,13 @@
     </modules>
     <frontend>
         <routers>
-            <Amasty_Hello_SomeFreeRouterName1>
+            <hello>
                 <use>standard</use>
                 <args>
                     <module>Amasty_Hello</module>
                     <frontName>welcome</frontName>
                 </args>
-            </Amasty_Hello_SomeFreeRouterName1>
+            </hello>
         </routers>
     </frontend>
 </config>

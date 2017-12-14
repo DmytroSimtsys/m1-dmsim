@@ -8,7 +8,7 @@
  */
 class Amasty_Hello_Model_Product
 {
-    public function syaHello(){
+    public function sayHello(){
         echo "hello";
     }
 }
