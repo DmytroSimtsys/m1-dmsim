@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Amasty_Hello>
+            <version>0.1.0</version>
+        </Amasty_Hello>
+    </modules>
+    <frontend>
+        <routers>
+            <Amasty_Hello_SomeFreeRouterName1>
+                <use>standard</use>
+                <args>
+                    <module>Amasty_Hello</module>
+                    <frontName>welcome</frontName>
+                </args>
+            </Amasty_Hello_SomeFreeRouterName1>
+        </routers>
+    </frontend>
+</config>

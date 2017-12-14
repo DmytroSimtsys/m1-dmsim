@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Amasty_Hello>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Amasty_Hello>
+    </modules>
+</config>
