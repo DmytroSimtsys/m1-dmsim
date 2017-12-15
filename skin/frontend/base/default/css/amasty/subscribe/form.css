@@ -1,0 +1,11 @@
+#subscribeForm input[type=email], input[type=search], input[type=number], input[type=password], input[type=tel], input[type=text] {
+    border-radius: 6px;
+    background-color: #8BB8F3;
+}
+
+#subscribeForm textarea {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    max-width: 365px;
+}
