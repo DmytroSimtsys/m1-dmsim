@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Amasty_DBScript>
+            <version>3.2.0.1</version>
+        </Amasty_DBScript>
+    </modules>
+    <global>
+        <models>
+            <amasty_dbscript>
+                <class>Amasty_DBScript_Model</class>
+                <resourceModel>amasty_dbscript_resource</resourceModel>
+            </amasty_dbscript>
+            <amasty_dbscript_resource>
+                <class>Amasty_DBScript_Model_Resource</class>
+                <entities>
+                    <ticket>
+                        <table>amasty_dbscript_ticket</table>
+                    </ticket>
+                    <comment>
+                        <table>amasty_dbscript_comment</table>
+                    </comment>
+                </entities>
+            </amasty_dbscript_resource>
+        </models>
+        <resources>
+            <amasty_dbscript_setup>
+                <setup>
+                    <module>Amasty_DBScript</module>
+                </setup>
+            </amasty_dbscript_setup>
+        </resources>
+    </global>
+</config>

@@ -1,13 +1,16 @@
 <?xml version="1.0"?>
-<layout version="0.1.0">
+<layout version="0.0.1">
     <subscription_index_index>
         <reference name="head">
             <action method="addCss">
                 <stylesheet>css/amasty/subscribe/form.css</stylesheet>
             </action>
-            <action method="addJs">
-                <script>js/amasty/validator.js</script>
+
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/amasty/validator.js</name>
             </action>
+
         </reference>
         <reference name="root">
             <action method="setTemplate">

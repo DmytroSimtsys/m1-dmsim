@@ -108,6 +108,9 @@ class Mage_Core_Model_Resource
         }
 
         $connection = $this->_newConnection((string)$connConfig->type, $connConfig);
+
+        //$connection->getProfiler()->setEnabled(true);
+
         if ($connection) {
             if (Mage::app()->getIsCacheLocked()) {
                 $this->_skippedConnections[$name] = true;

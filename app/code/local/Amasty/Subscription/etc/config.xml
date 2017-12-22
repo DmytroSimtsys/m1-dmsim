@@ -34,6 +34,20 @@
 		<class>Amasty_Subscription_Block</class>
 	  </subscription>
 	</blocks>
+	<models>
+	  <subscription>
+		<class>Amasty_Subscription_Model</class>
+		<resourceModel>subscription_mysql4</resourceModel>
+	  </subscription>
+	  <subscription_mysql4>
+		<class>Amasty_Subscription_Model_Mysql4</class>
+		<entities>		  
+			  <ticket>
+				<table>subs</table>
+			  </ticket>
+        </entities>
+	  </subscription_mysql4>
+	</models>
 	<resources>
 	  <subscription_setup>
 		<setup>

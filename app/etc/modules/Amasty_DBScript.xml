@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Amasty_DBScript>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Amasty_DBScript>
+    </modules>
+</config>

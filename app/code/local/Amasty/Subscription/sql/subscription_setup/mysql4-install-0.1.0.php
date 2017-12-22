@@ -2,15 +2,12 @@
 $installer = $this;
 $installer->startSetup();
 $sql=<<<SQLTEXT
-create table tablename(tablename_id int not null auto_increment, name varchar(100), primary key(tablename_id));
-    insert into tablename values(1,'tablename1');
-    insert into tablename values(2,'tablename2');
+create table subs(subs_id int not null auto_increment, name varchar(100), email varchar(100), phone varchar(100), message varchar(300), primary key(subs_id));
+    insert into subs values(1,'Vasya', 'v@gmail.com', '222-333-222', 'Hello');
 		
 SQLTEXT;
 
 $installer->run($sql);
-//demo 
-//Mage::getModel('core/url_rewrite')->setId(null);
-//demo 
+
 $installer->endSetup();
 	 

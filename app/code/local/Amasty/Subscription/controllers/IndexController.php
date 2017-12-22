@@ -3,7 +3,7 @@ class Amasty_Subscription_IndexController extends Mage_Core_Controller_Front_Act
     public function IndexAction() {
       
 	  $this->loadLayout();   
-	  $this->getLayout()->getBlock("head")->setTitle($this->__("Titlename"));
+	  $this->getLayout()->getBlock("head")->setTitle($this->__("Subscription"));
 	        $breadcrumbs = $this->getLayout()->getBlock("breadcrumbs");
       $breadcrumbs->addCrumb("home", array(
                 "label" => $this->__("Home Page"),
@@ -11,15 +11,12 @@ class Amasty_Subscription_IndexController extends Mage_Core_Controller_Front_Act
                 "link"  => Mage::getBaseUrl()
 		   ));
 
-      $breadcrumbs->addCrumb("titlename", array(
-                "label" => $this->__("Titlename"),
-                "title" => $this->__("Titlename")
+      $breadcrumbs->addCrumb("subscription", array(
+                "label" => $this->__("Subscription"),
+                "title" => $this->__("Subscription")
 		   ));
 
       $this->renderLayout(); 
 	  
-    }
-    public function mailAction(){
-
     }
 }
