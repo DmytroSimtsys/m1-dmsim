@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+      <modules>
+        <Amasty_Cron>
+          <version>1.0</version>
+        </Amasty_Cron>
+      </modules>
+      <crontab>
+        <jobs>
+          <custom_cron_task>
+            <schedule>
+              <cron_expr>*/5 * * * *</cron_expr>
+            </schedule>
+            <run>
+              <model>cron/cron::crontask</model>
+            </run>
+          </custom_cron_task>
+        </jobs>
+      </crontab>
+      <global>
+        <models>
+          <cron>
+           <class>Amasty_Cron_Model</class>
+          </cron>
+        </models>
+      </global>
+</config>
