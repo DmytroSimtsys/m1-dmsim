@@ -69,4 +69,36 @@
 	  </subscription_read>
 	</resources>
   </global>
+	<admin>
+		<routers>
+			<subscription>
+				<use>admin</use>
+				<args>
+					<module>Subscription</module>
+					<frontName>subscription</frontName>
+				</args>
+			</subscription>
+		</routers>
+	</admin>
+	<adminhtml>
+		<layout>
+			<updates>
+				<amasty>
+					<file>subscription.xml</file>
+				</amasty>
+			</updates>
+		</layout>
+		<menu>
+			<subscription translate="title" module="adminhtml">
+				<title>Advanced Subscription</title>
+				<sort_order>100</sort_order>
+				<children>
+					<set_time>
+						<title>List of Subscription</title>
+						<action>adminhtml/subscription</action>
+					</set_time>
+				</children>
+			</subscription>
+		</menu>
+	</adminhtml>
 </config> 

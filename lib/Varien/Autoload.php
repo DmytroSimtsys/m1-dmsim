@@ -90,7 +90,7 @@ class Varien_Autoload
             $classFile = str_replace(' ', DIRECTORY_SEPARATOR, ucwords(str_replace('_', ' ', $class)));
         }
         $classFile.= '.php';
-        //echo $classFile;die();
+       // echo $classFile;die();
         return include $classFile;
     }
 

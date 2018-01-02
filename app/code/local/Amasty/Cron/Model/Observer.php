@@ -6,7 +6,7 @@
  * Date: 28.12.2017
  * Time: 10:15
  */
-class Amasty_Cron_Model_Cron
+class Amasty_Cron_Model_Observer
 {
     public function crontask()
     {
