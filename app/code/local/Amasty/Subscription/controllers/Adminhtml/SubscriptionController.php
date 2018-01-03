@@ -10,8 +10,8 @@ class Amasty_Subscription_Adminhtml_SubscriptionController extends Mage_Adminhtm
 {
     public function indexAction()
     {
-        // $this->loadLayout();
-        // $this->renderLayout();
-        echo "Hello Admin";
+        $this->loadLayout()->_setActiveMenu('subscription');
+        $this->_addContent($this->getLayout()->createBlock('subscription/adminhtml_list'));
+        $this->renderLayout();
     }
 }
