@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Opsway_Subscription>
+      <active>true</active>
+      <codePool>local</codePool>
+      <version>0.1.3</version>
+    </Opsway_Subscription>
+  </modules>
+</config>

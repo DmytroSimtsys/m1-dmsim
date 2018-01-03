@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Opsway_Hello>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Opsway_Hello>
+    </modules>
+</config>
