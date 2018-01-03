@@ -79,6 +79,6 @@ class Opsway_Subscription_Block_Adminhtml_Subscription_Grid extends Mage_Adminht
 
     public function getRowUrl($row)
     {
-        return $this->getUrl('*/*/edit', array('id' => $row->getId()));
+        return $this->getUrl('*/*/edit', array('subs_id' => $row->getId()));
     }
 }

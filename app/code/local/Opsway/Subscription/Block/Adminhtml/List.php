@@ -14,6 +14,7 @@ class Opsway_Subscription_Block_Adminhtml_List extends Mage_Adminhtml_Block_Widg
         $this->_blockGroup = 'subscription';
         $this->_headerText = Mage::helper('subscription/data')->__('Subscription Manager');
         $this->_addButtonLabel = Mage::helper('subscription/data')->__('Add Subs');
+
         parent::__construct();
     }
 
