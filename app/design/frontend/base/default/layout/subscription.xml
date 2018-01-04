@@ -18,7 +18,7 @@
             </action>
         </reference>
         <reference name="content">
-            <block type="subscription/index" name="subscription_index" template="subscription/index.phtml"/>
+            <block type="subscription/index" name="subscription_index" template="opsway/subscription/index.phtml"/>
         </reference>
     </subscription_index_index>
 </layout>

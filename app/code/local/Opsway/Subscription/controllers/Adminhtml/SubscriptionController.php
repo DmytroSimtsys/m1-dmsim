@@ -130,7 +130,7 @@ class Opsway_Subscription_Adminhtml_SubscriptionController extends Mage_Adminhtm
             $message = $datas->name.'<br>'.$datas->email.'<br>'.$datas->phone.'<br>'.$datas->message;
         }
 
-        $sended_at = time();
+        $sended_at = date('Y-m-d H:i:s',time());
 
         $headers = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
@@ -139,8 +139,8 @@ class Opsway_Subscription_Adminhtml_SubscriptionController extends Mage_Adminhtm
         if (mail($to, $subject, $message, $headers)) {
             Mage::log("Success Log Message", null , "opsway_contacts.log");
             $subs->setStatus('success');
-            $subs->setSendedAt($sended_at);
-            //$this->IndexAction();
+            $subs->setSended_at($sended_at);
+            $subs->save();
         } else {
             echo "Fail";
             Mage::log("Error Log Message", Zend_Log::ERR , "opsway_contacts.log");

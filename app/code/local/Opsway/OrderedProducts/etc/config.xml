@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Opsway_OrderedProducts>
+            <version>0.1.0</version>
+        </Opsway_OrderedProducts>
+    </modules>
+    <frontend>
+        <routers>
+            <orderedproducts>
+                <args>
+                    <module>
+                        <Opsway_OrderedProducts before="Mage_Catalog">Opsway_OrderedProducts</Opsway_OrderedProducts>
+                    </module>
+                </args>
+            </orderedproducts>
+        </routers>
+    </frontend>
+</config>
