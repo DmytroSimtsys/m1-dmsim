@@ -16,6 +16,11 @@
                 <class>Opsway_OrderedProducts_Helper</class>
             </opsway_orderedproducts>
         </helpers>
+        <models>
+            <opsway_orderedproducts>
+                <class>Opsway_OrderedProducts_Model</class>
+            </opsway_orderedproducts>
+        </models>
     </global>
     <frontend>
         <layout>
@@ -26,4 +31,25 @@
             </updates>
         </layout>
     </frontend>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <orderedproducts_options>
+                                            <title>Ordered Products Configuration Section</title>
+                                        </orderedproducts_options>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
 </config>
