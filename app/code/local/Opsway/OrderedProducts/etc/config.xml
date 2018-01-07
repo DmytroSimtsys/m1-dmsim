@@ -5,15 +5,25 @@
             <version>0.1.0</version>
         </Opsway_OrderedProducts>
     </modules>
+    <global>
+        <blocks>
+            <opsway_orderedproducts>
+                <class>Opsway_OrderedProducts_Block</class>
+            </opsway_orderedproducts>
+        </blocks>
+        <helpers>
+            <opsway_orderedproducts>
+                <class>Opsway_OrderedProducts_Helper</class>
+            </opsway_orderedproducts>
+        </helpers>
+    </global>
     <frontend>
-        <routers>
-            <orderedproducts>
-                <args>
-                    <module>
-                        <Opsway_OrderedProducts before="Mage_Catalog">Opsway_OrderedProducts</Opsway_OrderedProducts>
-                    </module>
-                </args>
-            </orderedproducts>
-        </routers>
+        <layout>
+            <updates>
+                <opsway_orderedproducts>
+                    <file>ordered.xml</file>
+                </opsway_orderedproducts>
+            </updates>
+        </layout>
     </frontend>
 </config>

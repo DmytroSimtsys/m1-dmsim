@@ -27,9 +27,65 @@
 /**
  * Ordered Products block
  */
+/** @var $this Opsway_OrderedProducts_Block_Index */
 ?>
 
-<div id="messages_product_view"><?php echo $this->getMessagesBlock()->toHtml() ?></div>
+
 <div class="page-title">
-    <h1><?php echo Mage::helper('contacts')->__('Ordered Products') ?></h1>
+    <?php
+    if (Mage::getSingleton('customer/session')->isLoggedIn()) {
+        echo "<h1>" . Mage::helper('contacts')->__('Ordered Products') . "</h1>";
+    ?>
+    <div class="category-products">
+            <ul class="products-grid products-grid--max-5-col first last odd">
+                <?php
+                $_imgSize = 200;
+
+                foreach ($this->Proba() as $products) {
+                    //var_dump($products);
+                    echo "<li class='item last'>";
+                    echo "<a href='" . $products->getProductUrl() . "' class='product-image'>";
+                    echo "<img src='" . $this->helper('catalog/image')->init($products, 'small_image')->keepFrame(false)->resize($_imgSize) . "'>" . $products->name . "<br> $" . (int)$products->price . "<br>";
+
+                    echo "<div class='product-info'>";
+//                echo $this->getPriceHtml($products, true).'777';
+//            if($products->getRatingSummary()):
+//                echo $this->getReviewsSummaryHtml($products, 'short');
+//             endif;
+                    echo "</div>";
+                    echo "</a>";
+                    echo "</li>";
+                } ?>
+    </ul>
+</div>
+        <?php
+    } else {
+        echo "<h1>" . Mage::helper('contacts')->__('Recomended Products') . "</h1>";
+        ?>
+        <div class="category-products">
+            <ul class="products-grid products-grid--max-5-col first last odd">
+                <?php
+                $_imgSize = 200;
+
+                foreach ($this->Proba() as $products) {
+                    //var_dump($products);
+                    echo "<li class='item last'>";
+                    echo "<a href='" . $products->getProductUrl() . "' class='product-image'>";
+                    echo "<img src='" . $this->helper('catalog/image')->init($products, 'small_image')->keepFrame(false)->resize($_imgSize) . "'>" . $products->name . "<br> $" . (int)$products->price . "<br>";
+
+                    echo "<div class='product-info'>";
+//                echo $this->getPriceHtml($products, true).'777';
+//            if($products->getRatingSummary()):
+//                echo $this->getReviewsSummaryHtml($products, 'short');
+//             endif;
+                    echo "</div>";
+                    echo "</a>";
+                    echo "</li>";
+                } ?>
+            </ul>
+        </div>
+    <?php }
+    ?>
+
+
 </div>
