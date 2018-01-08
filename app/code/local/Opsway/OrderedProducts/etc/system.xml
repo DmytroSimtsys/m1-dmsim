@@ -10,7 +10,7 @@
     <sections>
         <ordered_options translate="label" module="opsway_orderedproducts/orderedproducts">
             <label>Orderedproducts Configuration Settings</label>
-            <tab>orderedproducts</tab>
+            <tab>ordered</tab>
             <frontend_type>text</frontend_type>
             <sort_order>1</sort_order>
             <show_in_default>1</show_in_default>
