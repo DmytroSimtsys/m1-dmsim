@@ -31,25 +31,12 @@
             </updates>
         </layout>
     </frontend>
-    <adminhtml>
-        <acl>
-            <resources>
-                <admin>
-                    <children>
-                        <system>
-                            <children>
-                                <config>
-                                    <children>
-                                        <orderedproducts_options>
-                                            <title>Ordered Products Configuration Section</title>
-                                        </orderedproducts_options>
-                                    </children>
-                                </config>
-                            </children>
-                        </system>
-                    </children>
-                </admin>
-            </resources>
-        </acl>
-    </adminhtml>
+    <default>
+        <opsway_orderedproducts>
+            <general>
+                <enabled>0</enabled>
+                <count_products>5</count_products>
+            </general>
+        </opsway_orderedproducts>
+    </default>
 </config>

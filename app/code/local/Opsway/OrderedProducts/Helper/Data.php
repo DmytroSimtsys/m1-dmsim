@@ -6,6 +6,7 @@
  * Date: 04.01.2018
  * Time: 22:16
  */
-class Opsway_OrderedProducts_Helper_Orderedproducts extends Mage_Core_Helper_Abstract
+class Opsway_OrderedProducts_Helper_Data extends Mage_Core_Helper_Abstract
 {
+    //
 }
