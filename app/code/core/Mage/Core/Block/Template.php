@@ -280,6 +280,7 @@ HTML;
      */
     protected function _toHtml()
     {
+
         if (!$this->getTemplate()) {
             return '';
         }

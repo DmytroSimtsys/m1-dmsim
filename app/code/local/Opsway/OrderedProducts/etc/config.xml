@@ -36,6 +36,7 @@
             <general>
                 <enabled>0</enabled>
                 <count_products>5</count_products>
+                <cache_products>checked</cache_products>
             </general>
         </opsway_orderedproducts>
     </default>

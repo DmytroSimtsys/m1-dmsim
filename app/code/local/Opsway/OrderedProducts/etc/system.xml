@@ -47,6 +47,19 @@
                             </depends>
                         </count_products>
                     </fields>
+                    <fields>
+                        <cache_products>
+                            <label>Enable cache</label>
+                            <frontend_type>checkbox</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>30</sort_order>
+                            <depends>
+                                <enabled>1</enabled>
+                            </depends>
+                        </cache_products>
+                    </fields>
                 </general>
             </groups>
         </opsway_orderedproducts>

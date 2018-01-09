@@ -33,6 +33,7 @@
 
 <div class="page-title">
     <?php
+echo date('d-m-Y h.i.s', time());
     if (Mage::getSingleton('customer/session')->isLoggedIn()) {
         echo "<h1>" . Mage::helper('contacts')->__('Ordered Products') . "</h1>";
     ?>
@@ -47,12 +48,6 @@
                     echo "<a href='" . $products->getProductUrl() . "' class='product-image'>";
                     echo "<img src='" . $this->helper('catalog/image')->init($products, 'small_image')->keepFrame(false)->resize($_imgSize) . "'>" . $products->name . "<br> $" . (int)$products->price . "<br>";
 
-                    echo "<div class='product-info'>";
-//                echo $this->getPriceHtml($products, true).'777';
-//            if($products->getRatingSummary()):
-//                echo $this->getReviewsSummaryHtml($products, 'short');
-//             endif;
-                    echo "</div>";
                     echo "</a>";
                     echo "</li>";
                 } ?>
@@ -73,12 +68,6 @@
                     echo "<a href='" . $products->getProductUrl() . "' class='product-image'>";
                     echo "<img src='" . $this->helper('catalog/image')->init($products, 'small_image')->keepFrame(false)->resize($_imgSize) . "'>" . $products->name . "<br> $" . (int)$products->price . "<br>";
 
-                    echo "<div class='product-info'>";
-//                echo $this->getPriceHtml($products, true).'777';
-//            if($products->getRatingSummary()):
-//                echo $this->getReviewsSummaryHtml($products, 'short');
-//             endif;
-                    echo "</div>";
                     echo "</a>";
                     echo "</li>";
                 } ?>
